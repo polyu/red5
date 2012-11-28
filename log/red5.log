@@ -1,0 +1,433 @@
+2012-11-28 21:08:24,706 [main] INFO  org.red5.server.Launcher - Red5 Server 1.0.0 RC2 $Rev: 4357 $ (http://code.google.com/p/red5/)
+2012-11-28 21:08:24,813 [main] INFO  o.s.c.s.FileSystemXmlApplicationContext - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@ee0cc23: startup date [Wed Nov 28 21:08:24 CST 2012]; root of context hierarchy
+2012-11-28 21:08:24,881 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [red5.xml]
+2012-11-28 21:08:25,187 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [jee-container.xml]
+2012-11-28 21:08:25,315 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [red5.properties]
+2012-11-28 21:08:25,327 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@337ec9f7: defining beans [placeholderConfig,red5.common,red5.core,context.loader,pluginLauncher,tomcat.server]; root of factory hierarchy
+2012-11-28 21:08:25,371 [main] INFO  o.s.c.s.FileSystemXmlApplicationContext - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@69b01afa: startup date [Wed Nov 28 21:08:25 CST 2012]; root of context hierarchy
+2012-11-28 21:08:25,374 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [red5-common.xml]
+2012-11-28 21:08:25,502 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [red5.properties]
+2012-11-28 21:08:25,510 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4dbb9a58: defining beans [placeholderConfig,red5.server,rmiRegistry,mbeanServer,org.springframework.jmx.support.ConnectorServerFactoryBean#0,mbeanExporter,serializer,deserializer,minaEncoder,minaDecoder,statusObjectService,rtmpCodecFactory,rtmptCodecFactory,remotingCodecFactory,streamableFileFactory,filePersistenceThread,sharedObjectService,streamService,providerService,consumerService,schedulingService,warDeployService,remotingClient,object.cache,keyframe.cache,flv.impl,flvreader.impl,mp4reader.impl,mp3reader.impl,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1,streamExecutor,fileConsumer,playlistSubscriberStream,clientBroadcastStream]; root of factory hierarchy
+2012-11-28 21:08:25,537 [main] INFO  o.s.r.rmi.RmiRegistryFactoryBean - Creating new RMI registry
+2012-11-28 21:08:25,769 [main] INFO  o.s.j.s.ConnectorServerFactoryBean - JMX connector server started: javax.management.remote.rmi.RMIConnectorServer@6bab600f
+2012-11-28 21:08:25,802 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2012-11-28 21:08:25,805 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'org.springframework.jmx.support.ConnectorServerFactoryBean#0' has been autodetected for JMX exposure
+2012-11-28 21:08:25,907 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2012-11-28 21:08:25,911 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.1.8.5 created.
+2012-11-28 21:08:25,915 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2012-11-28 21:08:25,918 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v1.8.5) 'Red5_Scheduler' with instanceId 'windcolor-GA-MA785GM-US2H1354108105870'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2012-11-28 21:08:25,918 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'Red5_Scheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2012-11-28 21:08:25,918 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 1.8.5
+2012-11-28 21:08:25,919 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler Red5_Scheduler_$_windcolor-GA-MA785GM-US2H1354108105870 started.
+2012-11-28 21:08:25,919 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'schedulingService' has been autodetected for JMX exposure
+2012-11-28 21:08:25,942 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'clientBroadcastStream' has been autodetected for JMX exposure
+2012-11-28 21:08:25,962 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'org.springframework.jmx.support.ConnectorServerFactoryBean#0': registering with JMX server as MBean [org.red5.server:name=org.springframework.jmx.support.ConnectorServerFactoryBean#0,type=RMIConnectorServer]
+2012-11-28 21:08:25,964 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'schedulingService': registering with JMX server as MBean [org.red5.server:name=schedulingService,type=QuartzSchedulingService]
+2012-11-28 21:08:26,394 [main] INFO  org.red5.server.service.WarDeployer - War deployer service created
+2012-11-28 21:08:26,497 [main] INFO  o.s.c.s.FileSystemXmlApplicationContext - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@2136bdda: startup date [Wed Nov 28 21:08:26 CST 2012]; parent: ApplicationContext 'red5.common'
+2012-11-28 21:08:26,498 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [red5-core.xml]
+2012-11-28 21:08:26,562 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [red5.properties]
+2012-11-28 21:08:26,572 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e5bd978: defining beans [customEditorConfigurer,placeholderConfig,rtmpMinaConnManager,rtmpHandler,rtmpMinaIoHandler,rtmpTransport,rtmpMinaConnection,rtmptConnManager,rtmptHandler,rtmptServlet,rtmptConnection]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4dbb9a58
+2012-11-28 21:08:26,608 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - RTMP Mina Transport bound to /0.0.0.0:1935
+2012-11-28 21:08:26,609 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - RTMP Mina Transport Settings
+2012-11-28 21:08:26,609 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - I/O Threads: 16
+2012-11-28 21:08:26,705 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - TCP No Delay: true
+2012-11-28 21:08:26,705 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - Settings - send buffer size: -1 recv buffer size: -1 so linger: -1 traffic class: 8
+2012-11-28 21:08:31,767 [main] INFO  org.red5.server.ContextLoader - ContextLoader init
+2012-11-28 21:08:31,769 [main] INFO  org.red5.server.ContextLoader - Loading: default.context = ${red5.root}/webapps/red5-default.xml => /home/windcolor/red5-1.0.0/webapps/red5-default.xml
+2012-11-28 21:08:31,770 [main] INFO  o.s.c.s.FileSystemXmlApplicationContext - Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@2bf09a31: startup date [Wed Nov 28 21:08:31 CST 2012]; parent: ApplicationContext 'red5.common'
+2012-11-28 21:08:31,772 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from URL [file:/home/windcolor/red5-1.0.0/webapps/red5-default.xml]
+2012-11-28 21:08:31,815 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@313d21d6: defining beans [global.clientRegistry,global.serviceInvoker,global.mappingStrategy,global.context,global.handler,global.scope,red5.scopeResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@4dbb9a58
+2012-11-28 21:08:31,892 [main] INFO  org.red5.server.Context - Setting parent bean factory as core
+2012-11-28 21:08:32,069 [main] INFO  org.red5.server.tomcat.TomcatLoader - Setting connector: org.apache.catalina.connector.Connector
+2012-11-28 21:08:32,069 [main] INFO  org.red5.server.tomcat.TomcatLoader - Address to bind: /0.0.0.0:5080
+2012-11-28 21:08:32,070 [main] INFO  org.red5.server.tomcat.TomcatLoader - Loading tomcat context
+2012-11-28 21:08:32,070 [main] INFO  org.red5.server.tomcat.TomcatLoader - Server root: /home/windcolor/red5-1.0.0
+2012-11-28 21:08:32,070 [main] INFO  org.red5.server.tomcat.TomcatLoader - Config root: /home/windcolor/red5-1.0.0/conf
+2012-11-28 21:08:32,093 [main] INFO  org.red5.server.tomcat.TomcatLoader - Application root: /home/windcolor/red5-1.0.0/webapps
+2012-11-28 21:08:32,164 [main] INFO  org.red5.server.tomcat.TomcatLoader - Starting Tomcat servlet engine
+2012-11-28 21:08:32,164 [main] INFO  o.apache.catalina.startup.Embedded - Starting tomcat server
+2012-11-28 21:08:32,273 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/6.0.32
+2012-11-28 21:08:32,423 [main] INFO  org.apache.catalina.realm.JAASRealm - Set JAAS app name red5Engine
+2012-11-28 21:08:32,772 [main] INFO  o.a.coyote.http11.Http11Protocol - Initializing Coyote HTTP/1.1 on http-0.0.0.0-5080
+2012-11-28 21:08:32,784 [main] INFO  o.a.coyote.http11.Http11Protocol - Starting Coyote HTTP/1.1 on http-0.0.0.0-5080
+2012-11-28 21:08:32,800 [main] INFO  org.red5.server.tomcat.TomcatLoader - Dedicated RTMPT server configuration was not specified
+2012-11-28 21:08:32,833 [Launcher:/] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Nov 28 21:08:32 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@2bf09a31
+2012-11-28 21:08:32,833 [Launcher:/installer] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Nov 28 21:08:32 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@2bf09a31
+2012-11-28 21:08:32,834 [Launcher:/chat] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Nov 28 21:08:32 CST 2012]; parent: org.springframework.context.support.FileSystemXmlApplicationContext@2bf09a31
+2012-11-28 21:08:32,849 [Launcher:/chat] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2012-11-28 21:08:32,849 [Launcher:/installer] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2012-11-28 21:08:32,849 [Launcher:/] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/red5-web.xml]
+2012-11-28 21:08:32,908 [Launcher:/] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from ServletContext resource [/WEB-INF/red5-web.properties]
+2012-11-28 21:08:32,908 [Launcher:/installer] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from ServletContext resource [/WEB-INF/red5-web.properties]
+2012-11-28 21:08:32,916 [Launcher:/] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@308a1f38: defining beans [placeholderConfig,web.context,web.scope]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@313d21d6
+2012-11-28 21:08:32,928 [Launcher:/installer] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3341b736: defining beans [placeholderConfig,web.context,web.scope,web.handler,installer.service]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@313d21d6
+2012-11-28 21:08:32,929 [Launcher:/chat] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from ServletContext resource [/WEB-INF/red5-web.properties]
+2012-11-28 21:08:32,937 [Launcher:/chat] INFO  o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6080669d: defining beans [placeholderConfig,web.context,web.scope,web.handler]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@313d21d6
+2012-11-28 21:08:32,947 [Launcher:/installer] INFO  org.red5.server.Context - Setting parent bean factory as core
+2012-11-28 21:08:32,948 [Launcher:/] INFO  org.red5.server.Context - Setting parent bean factory as core
+2012-11-28 21:08:32,947 [Launcher:/chat] INFO  org.red5.server.Context - Setting parent bean factory as core
+2012-11-28 21:08:32,993 [Launcher:/chat] INFO  org.red5.server.scope.WebScope - Set server [Server@44091520map[[empty]]]
+2012-11-28 21:08:33,023 [Launcher:/chat] INFO  org.red5.server.Server - Add mapping global: default host:  context: chat
+2012-11-28 21:08:33,023 [Launcher:/chat] INFO  org.red5.server.Server - Add mapping global: default host: localhost context: chat
+2012-11-28 21:08:33,023 [Launcher:/chat] INFO  org.red5.server.Server - Add mapping global: default host: localhost:8088 context: chat
+2012-11-28 21:08:33,023 [Launcher:/chat] INFO  org.red5.server.Server - Add mapping global: default host: 127.0.0.1:8088 context: chat
+2012-11-28 21:08:33,053 [Launcher:/installer] INFO  org.red5.server.scope.WebScope - Set server [Server@44091520map['/chat' -> 'default', 'localhost:8088/chat' -> 'default', '127.0.0.1:8088/chat' -> 'default', 'localhost/chat' -> 'default']]
+2012-11-28 21:08:33,055 [Launcher:/installer] INFO  org.red5.server.Server - Add mapping global: default host: localhost context: installer
+2012-11-28 21:08:33,055 [Launcher:/installer] INFO  org.red5.server.Server - Add mapping global: default host: localhost:5080 context: installer
+2012-11-28 21:08:33,059 [Launcher:/] INFO  org.red5.server.scope.WebScope - Set server [Server@44091520map['/chat' -> 'default', 'localhost:8088/chat' -> 'default', 'localhost:5080/installer' -> 'default', '127.0.0.1:8088/chat' -> 'default', 'localhost/installer' -> 'default', 'localhost/chat' -> 'default']]
+2012-11-28 21:08:33,065 [Launcher:/] INFO  org.red5.server.Server - Add mapping global: default host:  context: 
+2012-11-28 21:08:33,066 [Launcher:/] WARN  org.red5.server.scope.Scope - Invalid scope was not added: [WebScope@6c97f621 Depth = 1, Path = '/default', Name = '']
+2012-11-28 21:08:33,070 [Launcher:/installer] INFO  org.red5.server.service.Installer - Installer service created
+2012-11-28 21:08:41,397 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action connect
+2012-11-28 21:08:41,401 [NioProcessor-2] INFO  o.red5.server.net.rtmp.RTMPHandler - Connecting to: [WebScope@152e7cb6 Depth = 1, Path = '/default', Name = 'chat']
+2012-11-28 21:08:41,404 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - connect IConnection nombre params=7
+2012-11-28 21:08:41,404 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - W3C x-category:session x-event:connect c-ip:127.0.0.1 c-client-id:0
+2012-11-28 21:08:41,404 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - appConnect 0
+2012-11-28 21:08:41,404 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - ici2
+2012-11-28 21:08:41,406 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - ici3
+2012-11-28 21:08:41,406 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - connected as :dfdf78webcam=true status=truerole=nsexe=mroom=welcomeworld=world1
+2012-11-28 21:08:41,411 [NioProcessor-2] INFO  o.r.server.so.SharedObjectService - Created persistence store org.red5.server.persistence.FilePersistence@31734b48 for shared objects.
+2012-11-28 21:08:41,416 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - Client joined app 0
+2012-11-28 21:08:41,446 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:08:41,447 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action getUserList
+2012-11-28 21:08:41,470 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - getUserList called
+2012-11-28 21:08:41,478 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:08:41,523 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:08:41,604 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action publish
+2012-11-28 21:08:41,622 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Provider connect
+2012-11-28 21:08:41,622 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Stream start
+2012-11-28 21:08:41,624 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Provider connect
+2012-11-28 21:08:41,625 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:publish c-ip:127.0.0.1 x-sname:3f53e7f3-7d27-4150-a93d-eccef806dbba x-name:dfdf78
+2012-11-28 21:08:41,698 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:08:41,708 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:08:47,058 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action send_private
+2012-11-28 21:08:47,059 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - receive_private 0 <b>dfdf78:</b><font color='undefined'>fsdf</font>
+2012-11-28 21:08:47,062 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - received_private 0 <b>dfdf78:</b><font color='undefined'>fsdf</font>
+2012-11-28 21:08:47,072 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:08:54,388 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action send_private
+2012-11-28 21:08:54,389 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - receive_private 0 <b>dfdf78:</b><font color='undefined'>sdfsdf</font>
+2012-11-28 21:08:54,390 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - received_private 0 <b>dfdf78:</b><font color='undefined'>sdfsdf</font>
+2012-11-28 21:08:54,402 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:08:57,347 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action send_private
+2012-11-28 21:08:57,348 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - receive_private 0 <b>dfdf78:</b><font color='undefined'>:zzz:</font>
+2012-11-28 21:08:57,349 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - received_private 0 <b>dfdf78:</b><font color='undefined'>:zzz:</font>
+2012-11-28 21:08:57,353 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:00,749 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action send_private
+2012-11-28 21:09:00,750 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - receive_private 0 <b>dfdf78:</b><font color='#660066'>dsfsd</font>
+2012-11-28 21:09:00,751 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - received_private 0 <b>dfdf78:</b><font color='#660066'>dsfsd</font>
+2012-11-28 21:09:00,759 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:06,254 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:06,259 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:06,291 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:d972428e-91ba-4850-85d1-7e47b3a36016
+2012-11-28 21:09:06,292 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:06,296 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:d972428e-91ba-4850-85d1-7e47b3a36016 x-name:dfdf78
+2012-11-28 21:09:07,494 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:07,496 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:07,497 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:07,499 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:4594 sc-bytes:311847 x-sname:d972428e-91ba-4850-85d1-7e47b3a36016
+2012-11-28 21:09:07,500 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:07,507 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:eea42428-da5e-4dc5-b9fe-29844303d5e3
+2012-11-28 21:09:07,507 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:07,512 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:eea42428-da5e-4dc5-b9fe-29844303d5e3 x-name:dfdf78
+2012-11-28 21:09:07,878 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:07,880 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:07,881 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:07,882 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:4707 sc-bytes:312264 x-sname:eea42428-da5e-4dc5-b9fe-29844303d5e3
+2012-11-28 21:09:07,884 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:07,890 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:f9462386-d547-45f9-8439-eb48b72f0a8e
+2012-11-28 21:09:07,890 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:07,894 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:f9462386-d547-45f9-8439-eb48b72f0a8e x-name:dfdf78
+2012-11-28 21:09:08,038 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:08,040 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:08,041 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:08,042 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:4820 sc-bytes:312677 x-sname:f9462386-d547-45f9-8439-eb48b72f0a8e
+2012-11-28 21:09:08,043 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:08,050 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:1cb7b784-d0ca-4bd0-b2d8-61d0de562034
+2012-11-28 21:09:08,050 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:08,051 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:1cb7b784-d0ca-4bd0-b2d8-61d0de562034 x-name:dfdf78
+2012-11-28 21:09:08,198 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:08,200 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:08,201 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:08,202 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:4933 sc-bytes:313090 x-sname:1cb7b784-d0ca-4bd0-b2d8-61d0de562034
+2012-11-28 21:09:08,203 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:08,207 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:08,207 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:e302d912-3e93-4d9c-bd4d-28e9ff5e1735
+2012-11-28 21:09:08,209 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:e302d912-3e93-4d9c-bd4d-28e9ff5e1735 x-name:dfdf78
+2012-11-28 21:09:08,366 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:08,368 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:08,373 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:08,374 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5046 sc-bytes:313503 x-sname:e302d912-3e93-4d9c-bd4d-28e9ff5e1735
+2012-11-28 21:09:08,375 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:08,381 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:9f7c2aa0-647e-4f4a-8ba3-d658363825c1
+2012-11-28 21:09:08,381 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:08,385 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:9f7c2aa0-647e-4f4a-8ba3-d658363825c1 x-name:dfdf78
+2012-11-28 21:09:08,526 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:08,529 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:08,530 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:08,531 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5159 sc-bytes:313916 x-sname:9f7c2aa0-647e-4f4a-8ba3-d658363825c1
+2012-11-28 21:09:08,532 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:08,538 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:f72c2938-19ca-4636-90a1-9fe6780f2ed5
+2012-11-28 21:09:08,538 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:08,542 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:f72c2938-19ca-4636-90a1-9fe6780f2ed5 x-name:dfdf78
+2012-11-28 21:09:08,694 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:08,696 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:08,697 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:08,698 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5272 sc-bytes:314329 x-sname:f72c2938-19ca-4636-90a1-9fe6780f2ed5
+2012-11-28 21:09:08,700 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:08,706 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:b391e24f-a8f4-4e74-af4f-27abb9000911
+2012-11-28 21:09:08,706 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:08,709 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:b391e24f-a8f4-4e74-af4f-27abb9000911 x-name:dfdf78
+2012-11-28 21:09:08,847 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:08,849 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:08,850 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:08,851 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5385 sc-bytes:314742 x-sname:b391e24f-a8f4-4e74-af4f-27abb9000911
+2012-11-28 21:09:08,852 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:08,856 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:08,856 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:0a5bcf05-80a3-4833-93c1-ed382936ad94
+2012-11-28 21:09:08,857 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:0a5bcf05-80a3-4833-93c1-ed382936ad94 x-name:dfdf78
+2012-11-28 21:09:09,007 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:09,009 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:09,010 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:09,011 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5498 sc-bytes:315155 x-sname:0a5bcf05-80a3-4833-93c1-ed382936ad94
+2012-11-28 21:09:09,012 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:09,018 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:54d5e736-4caa-4015-a5c6-be829a83f6d4
+2012-11-28 21:09:09,018 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:09,022 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:54d5e736-4caa-4015-a5c6-be829a83f6d4 x-name:dfdf78
+2012-11-28 21:09:09,174 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:09,176 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:09,177 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:09,178 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5611 sc-bytes:315568 x-sname:54d5e736-4caa-4015-a5c6-be829a83f6d4
+2012-11-28 21:09:09,180 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:09,186 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:d6a90343-f8f6-49e4-b28b-82c386f1a312
+2012-11-28 21:09:09,186 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:09,188 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:d6a90343-f8f6-49e4-b28b-82c386f1a312 x-name:dfdf78
+2012-11-28 21:09:40,545 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:40,547 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:40,548 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:40,549 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5836 sc-bytes:316093 x-sname:d6a90343-f8f6-49e4-b28b-82c386f1a312
+2012-11-28 21:09:40,550 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:40,556 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:4f880111-17d8-4154-8aa4-e4c23097797b
+2012-11-28 21:09:40,556 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:40,559 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:4f880111-17d8-4154-8aa4-e4c23097797b x-name:dfdf78
+2012-11-28 21:09:41,092 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:41,094 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:41,095 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:41,096 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:5949 sc-bytes:316506 x-sname:4f880111-17d8-4154-8aa4-e4c23097797b
+2012-11-28 21:09:41,097 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:41,103 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:41,103 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:0c2d36f0-d3ff-4895-951c-60e97aa555c1
+2012-11-28 21:09:41,107 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:0c2d36f0-d3ff-4895-951c-60e97aa555c1 x-name:dfdf78
+2012-11-28 21:09:41,273 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:41,275 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:41,276 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:41,277 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6062 sc-bytes:316919 x-sname:0c2d36f0-d3ff-4895-951c-60e97aa555c1
+2012-11-28 21:09:41,278 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:41,284 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:b7e44bc0-059c-4479-80fa-b154217a7937
+2012-11-28 21:09:41,284 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:41,287 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:b7e44bc0-059c-4479-80fa-b154217a7937 x-name:dfdf78
+2012-11-28 21:09:41,441 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:41,444 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:41,445 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:41,446 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6175 sc-bytes:317332 x-sname:b7e44bc0-059c-4479-80fa-b154217a7937
+2012-11-28 21:09:41,447 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:41,453 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:1cbd6450-f5af-48f1-851d-ae6449fe53cd
+2012-11-28 21:09:41,453 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:41,456 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:1cbd6450-f5af-48f1-851d-ae6449fe53cd x-name:dfdf78
+2012-11-28 21:09:41,611 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:41,613 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:41,614 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:41,615 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6288 sc-bytes:317745 x-sname:1cbd6450-f5af-48f1-851d-ae6449fe53cd
+2012-11-28 21:09:41,616 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:41,626 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:41,626 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:5d30fc11-a8c4-40f6-b3ac-9b340c0dc6c4
+2012-11-28 21:09:41,628 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:5d30fc11-a8c4-40f6-b3ac-9b340c0dc6c4 x-name:dfdf78
+2012-11-28 21:09:41,777 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:41,779 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:41,782 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:41,783 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6401 sc-bytes:318158 x-sname:5d30fc11-a8c4-40f6-b3ac-9b340c0dc6c4
+2012-11-28 21:09:41,784 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:41,790 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:f6334e06-f6b6-4af1-8f65-eed4b28b5469
+2012-11-28 21:09:41,790 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:41,794 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:f6334e06-f6b6-4af1-8f65-eed4b28b5469 x-name:dfdf78
+2012-11-28 21:09:41,945 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:41,947 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:41,949 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:41,950 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6514 sc-bytes:318571 x-sname:f6334e06-f6b6-4af1-8f65-eed4b28b5469
+2012-11-28 21:09:41,951 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:41,957 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:4976b13d-36d6-4d9b-bc26-1cfbba44596a
+2012-11-28 21:09:41,957 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:41,960 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:4976b13d-36d6-4d9b-bc26-1cfbba44596a x-name:dfdf78
+2012-11-28 21:09:42,135 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:42,137 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:42,138 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:42,139 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6627 sc-bytes:318984 x-sname:4976b13d-36d6-4d9b-bc26-1cfbba44596a
+2012-11-28 21:09:42,147 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:42,153 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:ef30bdec-82de-4d71-ae58-428443a5f556
+2012-11-28 21:09:42,153 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:42,155 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:ef30bdec-82de-4d71-ae58-428443a5f556 x-name:dfdf78
+2012-11-28 21:09:42,295 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:42,297 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:42,299 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:42,300 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6740 sc-bytes:319397 x-sname:ef30bdec-82de-4d71-ae58-428443a5f556
+2012-11-28 21:09:42,303 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:42,308 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:c10b6c0e-0661-407a-92d4-9c0933b074d4
+2012-11-28 21:09:42,308 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:42,312 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:c10b6c0e-0661-407a-92d4-9c0933b074d4 x-name:dfdf78
+2012-11-28 21:09:42,479 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:42,481 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:42,482 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:42,483 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6853 sc-bytes:319810 x-sname:c10b6c0e-0661-407a-92d4-9c0933b074d4
+2012-11-28 21:09:42,484 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:42,490 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:67ef9499-9d63-458c-9c38-8b8f2d3bc30b
+2012-11-28 21:09:42,490 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:42,494 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:67ef9499-9d63-458c-9c38-8b8f2d3bc30b x-name:dfdf78
+2012-11-28 21:09:42,641 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:42,643 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:42,644 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:42,645 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:6966 sc-bytes:320223 x-sname:67ef9499-9d63-458c-9c38-8b8f2d3bc30b
+2012-11-28 21:09:42,648 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:42,654 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:42,654 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:1c7ed2f8-9a28-4b65-9e51-2cde1197195e
+2012-11-28 21:09:42,657 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:1c7ed2f8-9a28-4b65-9e51-2cde1197195e x-name:dfdf78
+2012-11-28 21:09:42,825 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:09:42,827 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:09:42,828 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:09:42,828 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:7079 sc-bytes:320636 x-sname:1c7ed2f8-9a28-4b65-9e51-2cde1197195e
+2012-11-28 21:09:42,829 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:09:42,835 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:071faeb3-a4ef-46d0-9f0d-294823867c8e
+2012-11-28 21:09:42,835 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:09:42,838 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:071faeb3-a4ef-46d0-9f0d-294823867c8e x-name:dfdf78
+2012-11-28 21:09:44,129 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action startTalk
+2012-11-28 21:09:44,130 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - startTalk: dfdf78
+2012-11-28 21:09:44,133 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:44,223 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action stopTalk
+2012-11-28 21:09:44,224 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - stopTalk: dfdf78
+2012-11-28 21:09:44,227 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:44,792 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action requestHand
+2012-11-28 21:09:44,794 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - send_public from_pseudodfdf78
+2012-11-28 21:09:44,877 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:45,834 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action requestHand
+2012-11-28 21:09:45,835 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - send_public from_pseudodfdf78
+2012-11-28 21:09:45,843 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:46,153 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action requestHand
+2012-11-28 21:09:46,154 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - send_public from_pseudodfdf78
+2012-11-28 21:09:46,164 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:46,385 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action requestHand
+2012-11-28 21:09:46,386 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - send_public from_pseudodfdf78
+2012-11-28 21:09:46,391 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:46,585 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action requestHand
+2012-11-28 21:09:46,586 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - send_public from_pseudodfdf78
+2012-11-28 21:09:46,591 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:09:46,765 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action requestHand
+2012-11-28 21:09:46,765 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - send_public from_pseudodfdf78
+2012-11-28 21:09:46,776 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:04,603 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action startTalk
+2012-11-28 21:10:04,604 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - startTalk: dfdf78
+2012-11-28 21:10:04,609 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:04,696 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action stopTalk
+2012-11-28 21:10:04,698 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - stopTalk: dfdf78
+2012-11-28 21:10:04,701 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:05,706 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action startTalk
+2012-11-28 21:10:05,707 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - startTalk: dfdf78
+2012-11-28 21:10:05,711 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:05,813 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action stopTalk
+2012-11-28 21:10:05,814 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - stopTalk: dfdf78
+2012-11-28 21:10:05,817 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:06,298 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action startTalk
+2012-11-28 21:10:06,299 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - startTalk: dfdf78
+2012-11-28 21:10:06,302 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:06,373 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action stopTalk
+2012-11-28 21:10:06,374 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - stopTalk: dfdf78
+2012-11-28 21:10:06,377 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:06,690 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action startTalk
+2012-11-28 21:10:06,691 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - startTalk: dfdf78
+2012-11-28 21:10:06,693 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:06,777 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action stopTalk
+2012-11-28 21:10:06,778 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - stopTalk: dfdf78
+2012-11-28 21:10:06,781 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:07,155 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action startTalk
+2012-11-28 21:10:07,156 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - startTalk: dfdf78
+2012-11-28 21:10:07,160 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:07,273 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action stopTalk
+2012-11-28 21:10:07,274 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - stopTalk: dfdf78
+2012-11-28 21:10:07,277 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:08,708 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action startTalk
+2012-11-28 21:10:08,709 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - startTalk: dfdf78
+2012-11-28 21:10:08,714 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:08,806 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action stopTalk
+2012-11-28 21:10:08,807 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - stopTalk: dfdf78
+2012-11-28 21:10:08,818 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:10:15,749 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:10:15,755 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:10:15,757 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:10:15,757 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:98838a00-0f85-40c5-a7b1-061ec32b7843
+2012-11-28 21:10:15,759 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:98838a00-0f85-40c5-a7b1-061ec32b7843 x-name:dfdf78
+2012-11-28 21:10:19,715 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action send_public
+2012-11-28 21:10:19,717 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - send_public from_pseudodfdf78 msg:<font color='#00000'>hjh</font>
+2012-11-28 21:10:19,725 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _result
+2012-11-28 21:11:08,556 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:11:08,557 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:11:08,559 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:8994 sc-bytes:323169 x-sname:98838a00-0f85-40c5-a7b1-061ec32b7843
+2012-11-28 21:11:08,560 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:11:08,560 [NioProcessor-2] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:11:08,561 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:11:08,562 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:9045 sc-bytes:323176 x-sname:071faeb3-a4ef-46d0-9f0d-294823867c8e
+2012-11-28 21:11:08,564 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Stream close
+2012-11-28 21:11:08,565 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Provider disconnect
+2012-11-28 21:11:08,567 [NioProcessor-2] INFO  o.r.s.stream.ClientBroadcastStream - Provider disconnect
+2012-11-28 21:11:08,567 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:unpublish c-ip:127.0.0.1 cs-bytes:9045 sc-bytes:323176 x-sname:3f53e7f3-7d27-4150-a93d-eccef806dbba x-file-length:146 x-name:dfdf78
+2012-11-28 21:11:08,569 [NioProcessor-2] WARN  o.r.s.net.rtmp.RTMPMinaIoHandler - Exception caught Broken pipe
+2012-11-28 21:11:08,571 [NioProcessor-2] WARN  o.r.s.net.rtmp.RTMPMinaIoHandler - Exception caught null
+2012-11-28 21:11:08,573 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - removeuser invoked id:0 pseudo=dfdf78sexe=m
+2012-11-28 21:11:08,574 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - W3C x-category:session x-event:disconnect c-ip:127.0.0.1 c-client-id:0
+2012-11-28 21:11:08,574 [NioProcessor-2] INFO  n.freedevelopment.chat.Application - Red5First.appDisconnect 0
+2012-11-28 21:11:14,161 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action connect
+2012-11-28 21:11:14,162 [NioProcessor-3] INFO  o.red5.server.net.rtmp.RTMPHandler - Connecting to: [WebScope@152e7cb6 Depth = 1, Path = '/default', Name = 'chat']
+2012-11-28 21:11:14,162 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - connect IConnection nombre params=7
+2012-11-28 21:11:14,162 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - W3C x-category:session x-event:connect c-ip:127.0.0.1 c-client-id:1
+2012-11-28 21:11:14,162 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - appConnect 1
+2012-11-28 21:11:14,162 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - ici2
+2012-11-28 21:11:14,162 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - ici3
+2012-11-28 21:11:14,162 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - connected as :wdwsdwebcam=true status=truerole=nsexe=mroom=welcomeworld=world1
+2012-11-28 21:11:14,163 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - Client joined app 1
+2012-11-28 21:11:14,176 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:11:14,197 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action getUserList
+2012-11-28 21:11:14,198 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - getUserList called
+2012-11-28 21:11:14,203 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:11:14,204 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:11:14,261 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action publish
+2012-11-28 21:11:14,264 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Provider connect
+2012-11-28 21:11:14,264 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Stream start
+2012-11-28 21:11:14,265 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Provider connect
+2012-11-28 21:11:14,265 [NioProcessor-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:publish c-ip:127.0.0.1 x-sname:2fdd95f5-f325-4295-8016-c23cf9411811 x-name:wdwsd
+2012-11-28 21:11:14,321 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:11:14,450 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action _error
+2012-11-28 21:11:18,863 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:11:18,869 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:11:18,875 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:11:18,875 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:6e2ed53c-91e6-4a83-b3c8-6d63fbf58db5
+2012-11-28 21:11:18,879 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:6e2ed53c-91e6-4a83-b3c8-6d63fbf58db5 x-name:wdwsd
+2012-11-28 21:11:19,687 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:11:19,689 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:11:19,690 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:11:19,691 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:4018 sc-bytes:311263 x-sname:6e2ed53c-91e6-4a83-b3c8-6d63fbf58db5
+2012-11-28 21:11:19,692 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:11:19,698 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:3d84eb8c-2f9e-49f5-8fd4-097692cbcd8e
+2012-11-28 21:11:19,698 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:11:19,702 [pool-4-thread-4] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:3d84eb8c-2f9e-49f5-8fd4-097692cbcd8e x-name:wdwsd
+2012-11-28 21:11:20,031 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action createStream
+2012-11-28 21:11:20,033 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action deleteStream
+2012-11-28 21:11:20,034 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Consumer disconnect
+2012-11-28 21:11:20,035 [pool-4-thread-2] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:stop c-ip:127.0.0.1 cs-bytes:4130 sc-bytes:311676 x-sname:3d84eb8c-2f9e-49f5-8fd4-097692cbcd8e
+2012-11-28 21:11:20,036 [NioProcessor-3] INFO  o.r.s.n.r.codec.RTMPProtocolDecoder - Action play
+2012-11-28 21:11:20,042 [pool-4-thread-1] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:d31118ac-045a-4882-ad00-e892177cc3c3
+2012-11-28 21:11:20,042 [NioProcessor-3] INFO  o.r.s.stream.ClientBroadcastStream - Consumer connect
+2012-11-28 21:11:20,045 [pool-4-thread-3] INFO  n.freedevelopment.chat.Application - W3C x-category:stream x-event:play c-ip:127.0.0.1 x-sname:d31118ac-045a-4882-ad00-e892177cc3c3 x-name:wdwsd
